@@ -263,6 +263,7 @@ textarea{
 }
 .social-icons {
   display: flex;
+  font-size: 25px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
