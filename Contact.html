@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Study Tour/20230404134315_IMG_1172.JPG"
+    />
+    <link rel="stylesheet" href="Css.css" />
+  </head>
+  <body>
+    <header>
+      <h1><span class="animated-text-last">Blog Pribadi</span></h1>
+      <nav>
+        <div class="menu">
+          <a href="index.html" class="menu-item">Home</a>
+          <a href="About.html" class="menu-item">About</a>
+          <a href="Contact.html" class="menu-item hom">Contact</a>
+          <a href="Gallery.html" class="menu-item">Gallery</a>
+          <a href="games.html" class="menu-item">Games</a>
+          <a action="/pencarian" method="GET">
+            <input
+              type="text"
+              id="searchInput"
+              class="ikon-search"
+              name="q"
+              placeholder="Search..."
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <h1>Contact</h1>
+    <article class="articel-pengunjung">
+      <p>Anda ingin terhubung dengan saya di media sosial?</p>
+      <p>
+        Jangan ragu untuk mengikuti akun saya di Facebook, Instagram, WhatsApp,
+        dan lainnya.
+      </p>
+      <p>
+        Dapatkan update terbaru dari saya dan jangan lewatkan kesempatan untuk
+        terhubung dengan saya secara lebih dekat.
+      </p>
+      <p>
+        Segera follow akun saya ya dan jangan lupa untuk share ke teman-teman
+        Anda juga! Caranya Clik Tombol Dibawah!!
+      </p>
+    </article>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/zil.amosas" class="fa fa-facebook"
+        >^ Facebook</a
+      >
+      <a href="https://wa.me/6282275625828" class="fa fa-whatsapp"
+        >^ WhatsApp</a
+      >
+      <a
+        href="https://instagram.com/amos_zil?igshid=OGQ5ZDc2ODk2ZA=="
+        class="fa fa-instagram"
+        >^ Instagram</a
+      >
+    </div>
+    <div class="container"></div>
+    <article class="articel-pengunjung">
+      <p>
+        Tenang saja Anda juga bisa mengirimkan saya pesan melalui blog saya ini
+        kok
+      </p>
+      <p>
+        caranya tinggal isi data-data dibawah kemudian send message! Otomatis
+        pesanmu akan saya terima:>
+      </p>
+    </article>
+    <head>
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <style>
+        .contact {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .contact-form {
+          flex: 1;
+          margin-left: 20px;
+        }
+      </style>
+    </head>
+    <div class="container">
+      <div class="contact">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>
+              Jl. Kenanga I, Juwangen, Purwomartani, Kec. Kalasan, Kabupaten
+              Sleman, Daerah Istimewa Yogyakarta 55571
+            </p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>amosaleksiatoziliwu@gmail.com</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>+62 82275625828</p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.137023260627!2d110.44709187485736!3d-7.775291977135897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5a14b4042083%3A0x80f7c7f5fcc55b76!2sUniversitas%20Kristen%20Imanuel!5e0!3m2!1sen!2sid!4v1695391931854!5m2!1sen!2sid"
+            frameborder="0"
+            style="border: 0; width: 50%; height: 290px"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="info">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form
+              action="forms/contact.php"
+              method="post"
+              role="form"
+              class="php-email-form"
+            >
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea
+                  placeholder="Your Message..."
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

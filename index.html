@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Pribadi</title>
+    <link rel="stylesheet" href="Css.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Study Tour/20230404134315_IMG_1172.JPG"
+    />
+  </head>
+  <body>
+    <header>
+      <h1><span class="animated-text-last">Blog Pribadi</span></h1>
+      <nav>
+        <div class="menu">
+          <a href="index.html" class="menu-item hom">Home</a>
+          <a href="About.html" class="menu-item">About</a>
+          <a href="Contact.html" class="menu-item">Contact</a>
+          <a href="Gallery.html" class="menu-item">Gallery</a>
+          <a href="games.html" class="menu-item">Games</a>
+          <a href=""></a>
+          <a action="/pencarian" method="GET">
+            <input
+              type="text"
+              id="searchInput"
+              class="ikon-search"
+              name="q"
+              placeholder="Search..."
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <h1>Home</h1>
+    <main class="main">
+      <video
+        src="Gambar/Amos.mp4"
+        autoplay
+        loop
+        muted
+        width="300"
+        height="300"
+      ></video>
+      <article class="left">
+        <br />
+        <h3>Hallo...</h3>
+        <p>Selamat datang di web site blog pribadi saya!</p>
+        <p>Saya senang bisa berbagi cerita dan pengalaman dengan Anda semua.</p>
+        <p>
+          Terima kasih sudah mengunjungi web site blog pribadi saya ya, semoga
+          Anda menikmati konten yang saya bagikan.
+        </p>
+      </article>
+    </main>
+    <script>
+      const animatedText = document.querySelector(".animated-text-last");
+      const textContent = animatedText.textContent;
+      animatedText.innerHTML = "";
+      for (let i = 0; i < textContent.length; i++) {
+        animatedText.innerHTML += "<span>" + textContent.charAt(i) + "</span>";
+      }
+
+      const animatedTextSpans = document.querySelectorAll(
+        ".animated-text-last span"
+      );
+      let delay = 0;
+      for (let i = 0; i < animatedTextSpans.length - 3; i++) {
+        animatedTextSpans[i].style.animationDelay = delay + "s";
+        delay += 0.5;
+      }
+    </script>
+    <script>
+      const homeLink = document.querySelector('.menu-item[href="#"]');
+      if (window.location.href.endsWith("/index.html")) {
+        homeLink.classList.add("active");
+      }
+    </script>
+    <footer>
+      <p>Hak Cipta &copy; 2023 Amos Ziliwu</p>
+    </footer>
+  </body>
+</html>
